@@ -1,4 +1,4 @@
-# user-spending-data-preprocessing
+# User-Spending-Data-Preprocessing
 🛍️ User Spending Data Preprocessing & Analysis
 📌 Project Overview
 
