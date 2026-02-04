@@ -1,30 +1,98 @@
-# User-Spending-Data-Preprocessing
-🛍️ User Spending Data Preprocessing & Analysis
-📌 Project Overview
+🛍️ User Spending Data — From Raw Data to Reliable Insights
+Data Preprocessing & Structuring
+📌 Contexto del proyecto
 
-This project focuses on preprocessing and structuring user spending data provided by a client in raw Python list format.
-The main objective is to clean, standardize, validate, and organize the data to improve its quality and make it suitable for further analysis and decision-making.
+En muchos proyectos reales de análisis de datos, el principal desafío no es analizar, sino preparar datos desordenados, inconsistentes y difíciles de usar.
 
-The project demonstrates practical data preprocessing skills commonly required in real-world data analytics tasks.
+En este proyecto trabajé con datos de gasto de usuarios entregados por un cliente en un formato poco estructurado (listas anidadas de Python), con el objetivo de transformarlos en un dataset limpio, consistente y listo para análisis y toma de decisiones.
 
-📊 Dataset Description
+El foco no está en los resultados finales, sino en la calidad del dato, que es la base de cualquier análisis confiable.
 
-The dataset was provided by the client and contains user-level information with nested data structures.
-It includes the following fields:
+🎯 Objetivo del proyecto
 
-user_id: Unique identifier for each user
+Depurar y estandarizar datos de gasto a nivel usuario.
 
-user_name: User name
+Detectar y corregir inconsistencias en formato y tipos de datos.
 
-user_age: Age of the user
+Validar información proveniente de fuentes no estructuradas.
 
-fav_categories: List of favorite product categories (e.g., ELECTRONICS, SPORT, BOOKS)
+Organizar los datos para que puedan ser analizados fácilmente en etapas posteriores.
 
-total_spendings: List of integers representing total spending per category
+📊 Descripción de los datos
 
-The raw data presented inconsistencies in formatting, data types, and structure, requiring preprocessing before analysis.
+El dataset fue proporcionado por un cliente y contiene información a nivel de usuario con estructuras anidadas y formatos inconsistentes.
 
-🛠️ Tools & Technologies
+Incluye:
+
+user_id → identificador único del usuario
+
+user_name → nombre del usuario
+
+user_age → edad
+
+fav_categories → lista de categorías de productos favoritas
+
+total_spendings → lista de montos gastados por categoría
+
+Los datos originales presentaban problemas comunes del mundo real:
+
+formatos no uniformes
+
+tipos de datos incorrectos
+
+listas desalineadas
+
+valores inesperados
+
+Lo que hacía imposible un análisis directo sin un preprocesamiento adecuado.
+
+🧠 Enfoque de trabajo
+
+El proyecto se abordó como lo haría un analista en un entorno profesional:
+
+Evaluación de la calidad del dato
+Se identificaron inconsistencias, errores y problemas estructurales antes de cualquier análisis.
+
+Limpieza y estandarización
+
+Normalización de texto
+
+Corrección de formatos
+
+Conversión de tipos de datos (por ejemplo, de float a int)
+
+Validación y manejo de errores
+Se incorporaron controles para asegurar que los datos fueran coherentes y robustos frente a entradas incorrectas.
+
+Reestructuración de la información
+Las listas y estructuras anidadas fueron reorganizadas para facilitar su uso en análisis posteriores.
+
+Generación de datos listos para análisis
+Se crearon resúmenes claros y consistentes que permiten avanzar directamente a EDA o modelado.
+
+📈 Resultados principales
+
+Dataset limpio, consistente y confiable
+
+Datos preparados para análisis exploratorio y visualización
+
+Mayor robustez frente a datos no estructurados
+
+Reducción de errores y ambigüedades en la información original
+
+💡 Por qué este proyecto es relevante
+
+Este proyecto refleja un escenario muy común en roles de Data Analyst:
+
+Los datos no llegan listos
+
+Existen errores, formatos inconsistentes y estructuras poco claras
+
+El valor está en ordenar, validar y preparar antes de analizar
+
+Demuestra la capacidad de transformar datos crudos en una base sólida para decisiones basadas en evidencia.
+
+🛠️ Herramientas utilizadas
 
 Python
 
@@ -34,37 +102,9 @@ NumPy
 
 Jupyter Notebook
 
-🔍 Data Preprocessing Steps
+GitHub para documentación y versionado
 
-The preprocessing process included the following key steps:
-
-Text cleaning and standardization (removal of extra spaces, consistent formatting)
-
-Data type conversion to ensure semantic consistency (e.g., floats to integers)
-
-Validation and error handling for incorrect or unexpected inputs
-
-Reorganization and restructuring of lists to improve usability
-
-Generation of structured summaries to support downstream analysis
-
-📈 Key Outcomes
-
-Improved data consistency and reliability
-
-Clean and well-structured dataset ready for exploratory analysis
-
-Increased robustness when handling real-world, unstructured data
-
-These transformations significantly enhance the overall quality and usability of the dataset.
-
-✅ Conclusions
-
-This project highlights the importance of data preprocessing as a foundational step in data analytics.
-By applying systematic cleaning, validation, and transformation techniques, raw data can be converted into reliable inputs for analysis, reporting, and business decision-making.
-
-
-📂 Project Structure
+📂 Estructura del proyecto
 ├── 01_user_spending_data_preprocessing.ipynb
 ├── README.md
 └── requirements.txt
